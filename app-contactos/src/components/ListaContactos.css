@@ -1,0 +1,23 @@
+.lista-container {
+  margin-top: 20px;
+}
+
+.lista-container h2 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.lista-vacia {
+  text-align: center;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  color: #666;
+}
+
+.lista-contactos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

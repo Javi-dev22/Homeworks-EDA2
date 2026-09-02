@@ -1,0 +1,50 @@
+.contacto-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  transition: box-shadow 0.2s;
+}
+
+.contacto-item:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contacto-info {
+  flex: 1;
+}
+
+.contacto-nombre {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.contacto-telefono {
+  color: #666;
+  font-size: 14px;
+}
+
+.btn-eliminar {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.btn-eliminar:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
