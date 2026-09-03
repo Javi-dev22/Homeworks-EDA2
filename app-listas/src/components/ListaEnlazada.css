@@ -1,0 +1,153 @@
+.lista-enlazada-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lista-enlazada-container h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.descripcion {
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+/* Reproductor actual */
+.reproductor-actual {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.reproductor-actual h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.cancion-actual {
+    text-align: center;
+}
+
+.cancion-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.cancion-artista {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+.cancion-duracion {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.indicador-posicion {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+    background: rgba(255,255,255,0.2);
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* Controles */
+.controles {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.btn-navegacion {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn-navegacion:hover:not(:disabled) {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+.btn-navegacion:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Lista completa */
+.lista-completa {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.lista-completa h4 {
+    margin: 0 0 15px 0;
+    color: #2c3e50;
+}
+
+.lista-completa ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-completa li {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ecf0f1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s;
+    border-radius: 4px;
+}
+
+.lista-completa li:hover {
+    background: #f8f9fa;
+}
+
+.lista-completa li.activo {
+    background: #e8f4fd;
+    border-left: 4px solid #3498db;
+}
+
+.numero {
+    color: #7f8c8d;
+    font-size: 14px;
+    min-width: 30px;
+}
+
+.titulo {
+    font-weight: 500;
+    color: #2c3e50;
+    flex: 1;
+}
+
+.artista {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.indicador {
+    color: #3498db;
+    font-size: 18px;
+}
