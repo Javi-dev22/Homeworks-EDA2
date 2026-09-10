@@ -1,0 +1,83 @@
+.lista-espera {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.lista-espera h2 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+}
+
+.lista-espera p {
+    color: #7f8c8d;
+    margin: 0 0 15px 0;
+}
+
+.formulario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.formulario input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 100px;
+}
+
+.formulario button {
+    padding: 10px 20px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #229954;
+}
+
+.pacientes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.paciente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #3498db;
+}
+
+.paciente button {
+    padding: 5px 15px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.paciente button:hover {
+    background: #c0392b;
+}
+
+.sintoma {
+    color: #7f8c8d;
+}
+
+.vacio {
+    text-align: center;
+    color: #95a5a6;
+    padding: 20px 0;
+}
