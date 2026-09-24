@@ -1,0 +1,228 @@
+.pila-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.pila-container h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Formulario */
+.formulario-container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.formulario-container h2 {
+    margin: 0 0 20px 0;
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.btn-agregar {
+    width: 100%;
+    padding: 12px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.btn-agregar:hover {
+    background: #229954;
+}
+
+/* Info de la pila */
+.info-pila {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.info-label {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.info-valor {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.btn-desapilar {
+    margin-left: auto;
+    padding: 8px 16px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-desapilar:hover:not(:disabled) {
+    background: #c0392b;
+}
+
+.btn-desapilar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Visualización de la pila */
+.pila-visual {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.pila-visual h2 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+.aviso {
+    color: #95a5a6;
+    font-size: 13px;
+    margin: 0 0 20px 0;
+    font-style: italic;
+}
+
+.libros-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.libro-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #bdc3c7;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.libro-item:hover {
+    transform: translateX(5px);
+}
+
+.libro-item.tope {
+    background: linear-gradient(135deg, #fff9e6 0%, #fef5d4 100%);
+    border-left: 4px solid #f39c12;
+    box-shadow: 0 2px 8px rgba(243, 156, 18, 0.2);
+}
+
+.badge-tope {
+    position: absolute;
+    top: -8px;
+    right: 15px;
+    background: #f39c12;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.libro-numero {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7f8c8d;
+    min-width: 40px;
+    text-align: center;
+}
+
+.libro-item.tope .libro-numero {
+    color: #f39c12;
+}
+
+.libro-info {
+    flex: 1;
+}
+
+.libro-nombre {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.libro-detalles {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+.vacio {
+    text-align: center;
+    color: #95a5a6;
+    padding: 40px 0;
+    font-size: 16px;
+}
