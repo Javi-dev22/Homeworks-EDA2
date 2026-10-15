@@ -1,0 +1,26 @@
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.create-form input,
+.create-form select,
+.create-form button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d5dbe0;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.create-form button {
+  border: 0;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+}
+
+.create-form button:hover { background: #34495e; }
+.error { color: #c0392b; font-size: 14px; margin: 0; }

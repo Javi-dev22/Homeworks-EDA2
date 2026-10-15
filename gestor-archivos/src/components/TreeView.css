@@ -1,0 +1,36 @@
+.tree-view { font-family: monospace; }
+
+.tree-node { margin: 2px 0; }
+
+.node-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.node-header:hover { background: #f8f9fa; }
+
+.node-header.folder { font-weight: 600; color: #2c3e50; }
+.node-header.file { color: #7f8c8d; }
+
+.toggle { width: 16px; cursor: pointer; user-select: none; }
+
+.icon { font-size: 16px; }
+
+.name { flex: 1; }
+
+.email {
+  font-size: 11px;
+  color: #95a5a6;
+  background: #ecf0f1;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.children { margin-left: 24px; border-left: 1px dashed #bdc3c7; }
+
+.empty { text-align: center; color: #95a5a6; padding: 40px; }
