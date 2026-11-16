@@ -1,0 +1,22 @@
+// Importar Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+$primary-color: #4a90e2;
+
+body {
+  background-color: #f4f7f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+  h2 {
+    color: $primary-color;
+  }
+}
+
+.list-group-item {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #f8f9fa;
+  }
+}
