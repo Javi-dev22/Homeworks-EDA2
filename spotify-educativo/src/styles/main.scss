@@ -1,0 +1,116 @@
+$bg-color: #121212;
+$card-bg: #181818;
+$primary-color: #1db954; 
+$text-main: #ffffff;
+$text-muted: #b3b3b3;
+$border-radius: 8px;
+
+body {
+  margin: 0;
+  font-family: 'Circular', 'Helvetica Neue', Arial, sans-serif;
+  background-color: $bg-color;
+  color: $text-main;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  h1 { color: $primary-color; font-size: 2.5rem; }
+  p { color: $text-muted; }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.card {
+  background: $card-bg;
+  padding: 25px;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+
+  h2 {
+    color: $primary-color;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-top: 0;
+  }
+}
+
+// Componente de buscador
+.search-box {
+  width: 100%;
+  padding: 12px;
+  background: #242424;
+  border: 1px solid #333;
+  border-radius: $border-radius;
+  color: $text-main;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  &:focus { outline: none; border-color: $primary-color; }
+}
+
+.suggestion-list {
+  list-style: none;
+  padding: 0;
+  li {
+    background: #242424;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    &:hover { background: #2a2a2a; }
+    .artist { color: $text-muted; font-size: 0.9rem; }
+  }
+}
+
+// Componente de Ranking
+.rank-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  .position {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $text-muted;
+    width: 40px;
+  }
+  .song-info {
+    flex: 1;
+    .title { font-weight: bold; }
+    .plays { color: $text-muted; font-size: 0.85rem; }
+  }
+}
+
+// Componente de recomendaciones
+.recommendation {
+  background: #242424;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border-left: 3px solid $primary-color;
+}
+
+button {
+  background: transparent;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: $primary-color;
+    color: $bg-color;
+  }
+}
